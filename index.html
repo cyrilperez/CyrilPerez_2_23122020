@@ -9,6 +9,10 @@
 
   <title>P2_Reservia</title>
 
+
+  <!--   Font Awesome -->
+  <script src="https://kit.fontawesome.com/cc5c0a23c3.js" crossorigin="anonymous"></script>
+  
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -16,8 +20,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   
-  <!--   Font Awesome -->
-  <script src="https://kit.fontawesome.com/cc5c0a23c3.js" crossorigin="anonymous"></script>
   
 </head>
 
@@ -49,28 +51,34 @@
 	<header>
     <div>
 		<h4>Trouvez votre hébergement pour des vacances de rêve</h4>
-		<p>En plein centre ville ou en pleine nature</p>
+		<h5>En plein centre ville ou en pleine nature</h5>
     </div>
+	
+	<form action="" method="get" class="form-city">
+		<div class="search-form">
+		    <label class="search-gauche" for="city"><i class="fas fa-map-marker-alt"></i></label>
+		    <input class="search-text" type="text" name="city" id="city" placeholder="Marseille, France" required>
+			<input class="search-button" type="submit" value="Rechercher">
+		</div>
+	</form>
+	
 	<div>
-		<span><i class="fas fa-map-marker-alt"></i></span>
-		<input type="text" class="" placeholder="Marseille, France">
-		<span>Rechercher</span>
-	</div>
-	<div>
-		<p>Filtres</p>
-			<ul class="filtres-links">
-			<li><a href=#><i class="fas fa-money-bill-wave"></i>économique</a>
+			<ul id="filtres-links">
+			<div class="no-margin-left">
+			<p>Filtres</p>
+			</div>
+			<li><a href=#><i class="fas fa-money-bill-wave button-blue"></i>économique</a>
 			</li>
-			<li><a href=#><i class="fas fa-child"></i>Familial</a>
+			<li><a href=#><i class="fas fa-child button-blue"></i>Familial</a>
 			</li>
-			<li><a href=#><i class="fas fa-heart"></i>Romantique</a>
+			<li><a href=#><i class="fas fa-heart button-blue"></i>Romantique</a>
 			</li>
-			<li><a href=#><i class="fas fa-dog"></i>Animaux autorisés</a>
+			<li><a href=#><i class="fas fa-dog button-blue"></i>Animaux autorisés</a>
 			</li>
 			</ul>		  
 		</div>
 		<div>
-			<p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p> 
+			<p><i class="fas fa-info border"></i> Plus de 500 logements sont disponibles dans cette ville</p> 
 		</div>
 	</div>
 	</header>
@@ -78,8 +86,8 @@
 
 
   <!--   Sections -->
-  <section id="Hébergements">
-	    <article>
+  <section id="section-hebergements" id="Hébergements">
+	    <article class="article-hebergement flex1">
 			<div>
 				<h5>Hébergements à Marseille</h5>
 			</div>
@@ -104,7 +112,7 @@
 				</div>
 		    </div>
 	    </article>
-	    <aside>
+	    <aside class="article-hebergement">
 		    <div>
 				<h5>Hébergements à Marseille</h5>
 				<i class="fas fa-chart-line"></i>
