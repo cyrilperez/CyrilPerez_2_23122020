@@ -2,54 +2,7 @@ body {
 	background-color: white;
 	font-family: 'Raleway', 'sans-serif';
 }
-section {
-	display:flex;
-	}
-.article-hebergement:nth-child(1)
-{
-    Flex:1;	
-}
-.article-hebergement:nth-child(2)
-{
-    flex:2;
-}
 
-.article-hebergement {
-	display: flex;
-	flex-flow: row wrap;
-	align-content: flex-start;
-	justify-content: space-between;
-	background-color: #F2F2F2;
-	border-radius: 15px;
-	padding:20px;
-	margin: 20px;
-}
-
-.no-margin-left {
-	margin-left: 0px
-}
-.button-blue{
-	width: 20px;
-    height: 20px;
-	display: inline-block;
-	color:#0065FC;
-	background-color: #DEEBFF;
-	padding: 10px;
-	border-radius: 50px;
-	border :2px solid #F2F2F2;
-	margin-right: 10px;
-}
-.border {
-	width: 10px;
-    height: 10px;
-    align-self:center; 
-	font-size: 0.5em;
-	color: #0065FC;
-	border-radius: 50px;
-	border :1px solid #F2F2F2;
-	margin-right: 10px;
-	padding: 5px;
-}
 
 /* NAV LINKS */
 a{
@@ -85,6 +38,64 @@ a{
 	color: #0065FC;
 	font-weight: bold;
 }
+
+
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* HEADER */
+.search-form {
+	width: 300px;
+	background-color: #F2F2F2;
+	border: 1px #F2F2F2 solid;
+	margin: 0px;
+	border-radius: 15px 15px 15px 15px;
+	display: flex;
+	align-items: center;
+	align-content: flex-start;
+	flex-wrap: nowrap;
+}
+.search-gauche {
+	display: inline-block;
+	padding: 10px;
+	align-items: center;
+}
+.search-text {
+	font-weight: bold;
+	padding: 10px;
+	align-items: flex-start;	
+}
+.search-buton {
+	display: inline-block;
+	background-color: #0065FC;
+	padding: 10px;
+}
+.button-blue{
+	width: 20px;
+    height: 20px;
+	display: inline-block;
+	color:#0065FC;
+	background-color: #DEEBFF;
+	padding: 10px;
+	border-radius: 50px;
+	border :2px solid #F2F2F2;
+	margin-right: 10px;
+}
+.border {
+	width: 10px;
+    height: 10px;
+    align-self:center; 
+	font-size: 0.5em;
+	color: #0065FC;
+	border-radius: 50px;
+	border :1px solid #F2F2F2;
+	margin-right: 10px;
+	padding: 5px;
+}
+/* Rond non rond et centrer icones links filtres */
 #filtres-links  {
 	font-weight : bold;
 	list-style-type: none;
@@ -115,60 +126,96 @@ a{
 	border-radius: 50px;
 }
 
-nav {
-	width: 100%;
+
+/* SECTION */
+section {
+	display:flex;
+	}
+
+.article-hebergement {
 	display: flex;
+	flex-flow: row wrap; 
+	align-content: flex-start;
 	justify-content: space-between;
+	background-color: #F2F2F2;
+	border-radius: 15px;
+	padding:20px;
+	margin: 20px;
+}
+.aside-hebergement {
+	flex : none;
+	width: 250px;
+	background-color: #F2F2F2;
+	border-radius: 15px;
+	padding:20px;
+	margin: 20px;
 }
 
-/* HEADER */
-.search-form {
-	width: 300px;
-	background-color: #F2F2F2;
-	border: 1px #F2F2F2 solid;
-	margin: 0px;
-/* 	padding: 10px; */
-	border-radius: 15px 15px 15px 15px;
+.no-margin-left {
+	margin-left: 0px
+}
+
+
+.hmarseille {
 	display: flex;
-	align-items: center;
-	align-content: flex-start;
-	flex-wrap: nowrap;
-}
-.search-gauche {
-	display: inline-block;
-	padding: 10px;
-	align-items: center;
-}
-.search-text {
-	font-weight: bold;
-	padding: 10px;
-	align-items: flex-start;	
-}
-.search-buton {
-	display: inline-block;
-	background-color: #0065FC;
-	padding: 10px;
-}
-#hmarseille {
-	display: flex;
+	flex-flow: wrap;
 	margin: 15px;
 }
-.hebergement_buttons {
+.hebergement_box {
+	display:flex; 
+	flex-direction: column;
+	width: 250px;
+	overflow: hidden;
 	border:5px solid white;
 	background-color: white;
 	border-radius: 20px;
 }
 .img-hebergement {
-	margin-bottom: -400px;
-	align-content: center;
-}
+	margin-top: -200px;
+
+	margin-left: -200px;
+	
+	}
 .textimg-hebergement {
+	display: flex;
+	
 	background-color: white;
 }
+#box {
+	/* Espace trop grand */
+}
+#box a {
+	font-weight: bold;
+	color: black;
+    margin-bottom: 0px;
+}
+#box a:hover {
+	color: #0065FC;
+	}
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+.color-star-blue {
+	margin: 0px;
+	font-size: 0.9em;
+	color:#0065FC;	
+}
+.color-star-grey {
+	margin: 0px;
+	font-size: 0.9em;
+	color:#d1d1d1;	
+}
+
+/* Flex section activité ??? */
+
+
+/* FOOTER */
 .piedpage {
 	display: flex;
 	background-color: #F2F2F2;
-	
 }
+
+
 
 
