@@ -210,14 +210,17 @@ no-margin-bottom {
 	display: flex;
 	flex-flow: row wrap; 
 	align-content: flex-start;
-	justify-content: space-between;
+	justify-content: flex-start;
 	background-color: #F2F2F2;
 	border-radius: 15px;
 	padding:20px;
 	margin: 20px;
 }
 .aside-hebergement {
-	flex : none;
+	display: flex;
+	flex-flow: column wrap; 
+	align-content: flex-start;
+	justify-content: flex-start;
 	width: 300px;
 	background-color: #F2F2F2;
 	border-radius: 15px;
@@ -225,7 +228,6 @@ no-margin-bottom {
 	margin: 20px;
 }
 #hebergement_box_aside {
-	
 	display:flex; 
 	flex-direction: row;
 	width: 280px;
@@ -237,7 +239,10 @@ no-margin-bottom {
 	margin-bottom: 15px;
 }
 #hebergement_box_aside a:hover {
-	border-color: black 5px solid;
+	box-shadow: 1px 1px 10px 3px #0065FC;
+	box-sizing: content-box;
+	border-radius: 20px;
+
 }
 .img-hebergement_aside {
 	position: absolute;
@@ -247,12 +252,12 @@ no-margin-bottom {
 	
 	
 	}
-.text-box-aside {
-	display: flex;
+.text-box_aside {
 	background-color: white;
 	color: black;
-    margin-left: 100px;
+    margin-left: 110px;
     margin-bottom: 0px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 /* Flex section activité ??? */
