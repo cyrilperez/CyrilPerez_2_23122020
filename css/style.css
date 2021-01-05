@@ -68,62 +68,80 @@ nav {
 	padding: 10px;
 	align-items: flex-start;	
 }
-.search-buton {
+#search-button {
 	display: inline-block;
+	color: white;
 	background-color: #0065FC;
-	padding: 10px;
+	margin-left: 0px;
+	padding: 10px 20px 10px 20px;
+	border: 2px solid #0065FC;
+	border-radius: 0px 15px 15px 0px
+	
 }
-.button-blue{
-	width: 20px;
-    height: 20px;
-	display: inline-block;
-	color:#0065FC;
+#search-button a {
 	background-color: #DEEBFF;
-	padding: 10px;
-	border-radius: 50px;
-	border :2px solid #F2F2F2;
-	margin-right: 10px;
 }
+#search-button a:hover {
+background-color: #DEEBFF;	
+}	
 .border {
-	width: 10px;
-    height: 10px;
-    align-self:center; 
 	font-size: 0.5em;
 	color: #0065FC;
 	border-radius: 50px;
 	border :1px solid #F2F2F2;
 	margin-right: 10px;
-	padding: 5px;
+	padding: 10px;
 }
+
+
 /* Rond non rond et centrer icones links filtres */
+.filtres {
+	display:flex;
+	align-items: baseline;
+}
+
 #filtres-links  {
+	display: flex;
+	
+	margin: 10px 10px 10px 0px;
+	
 	font-weight : bold;
 	list-style-type: none;
-	margin-left: 20px;
-	margin-right: 20px; 
-	display: flex;
+	
+	
 	flex-wrap: wrap;
-	align-content: flex-start;
-	align-items: center;
+	
+
+	
 }
 #filtres-links a {
 	font-weight: bold;
 	color:black;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 20px;
+	padding: 13px 13px 13px 0px;
 	border: 1px solid #F2F2F2;
-	padding: 10px 10px 10px 0px;
+	
 	border-radius: 50px;
 }
 #filtres-links a:hover {
 	background-color: #F2F2F2;
 	font-weight: bold;
 	color:black;
-	margin-left: 20px;
-	margin-right: 20px;
+	
 	border: 1px solid #F2F2F2;
-	padding: 10px 10px 10px 0px;
+	
 	border-radius: 50px;
+}
+
+.button-blue{
+	display: inline-block;
+	color:#0065FC;
+	background-color: #DEEBFF;
+	padding: 16px;
+	border-radius: 50px;
+	
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 
@@ -131,6 +149,67 @@ nav {
 section {
 	display:flex;
 	}
+
+.hmarseille {
+	
+	display: flex;
+	flex-flow: wrap;
+	margin: 15px;
+		
+}
+
+
+#hebergement_box {
+	
+	display:flex; 
+	flex-direction: column;
+	width: 230px;
+	height:170px;
+	border:5px solid white;
+	background-color: white;
+	border-radius: 20px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+#hebergement_box a:hover {
+	border-color: black 5px solid;
+}
+.img-hebergement {
+	position: absolute;
+	border-radius: 20px 20px 0px 0px;
+	height:100px;
+	width: 230px;
+	
+	
+	}
+.text-box {
+	background-color: white;
+	color: black;
+    margin-top: 110px;
+    margin-bottom: 0px;
+	/* Espace trop grand */
+}
+h3 {
+	font-weight: bold;
+}
+em {
+	font-weight: bold;
+	font-style: normal;
+	
+}
+.color-star-blue {
+	margin: 0px;
+	font-size: 0.9em;
+	color:#0065FC;	
+}
+.color-star-grey {
+	margin: 0px;
+	font-size: 0.9em;
+	color:#d1d1d1;	
+}
+no-margin-bottom {
+	margin: 0px;
+}
 
 .article-hebergement {
 	display: flex;
@@ -150,61 +229,36 @@ section {
 	padding:20px;
 	margin: 20px;
 }
-
-.no-margin-left {
-	margin-left: 0px
-}
-
-
-.hmarseille {
-	display: flex;
-	flex-flow: wrap;
-	margin: 15px;
-}
-.hebergement_box {
+#hebergement_box_aside {
+	
 	display:flex; 
-	flex-direction: column;
-	width: 250px;
-	overflow: hidden;
+	flex-direction: row;
+	width: 230px;
+	height:100px;
 	border:5px solid white;
 	background-color: white;
 	border-radius: 20px;
+	margin-right: 15px;
+	margin-bottom: 15px;
 }
-.img-hebergement {
-	margin-top: -200px;
-
-	margin-left: -200px;
+#hebergement_box_aside a:hover {
+	border-color: black 5px solid;
+}
+.img-hebergement_aside {
+	position: absolute;
+	border-radius: 20px 0px 0px 20px;
+	height:100px;
+	width: 100px;
+	
 	
 	}
-.textimg-hebergement {
+.text-box-aside {
 	display: flex;
-	
 	background-color: white;
-}
-#box {
-	/* Espace trop grand */
-}
-#box a {
-	font-weight: bold;
 	color: black;
+   margin-left: 100px
     margin-bottom: 0px;
-}
-#box a:hover {
-	color: #0065FC;
-	}
-em {
-	font-style: normal;
-	font-weight: bold;
-}
-.color-star-blue {
-	margin: 0px;
-	font-size: 0.9em;
-	color:#0065FC;	
-}
-.color-star-grey {
-	margin: 0px;
-	font-size: 0.9em;
-	color:#d1d1d1;	
+	/* Espace trop grand */
 }
 
 /* Flex section activité ??? */
