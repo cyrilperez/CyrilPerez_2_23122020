@@ -94,25 +94,17 @@ background-color: #DEEBFF;
 }
 
 
-/* Rond non rond et centrer icones links filtres */
 .filtres {
 	display:flex;
 	align-items: baseline;
 }
 
 #filtres-links  {
-	display: flex;
-	
-	margin: 10px 10px 10px 0px;
-	
+	display: flex;	
+	margin: 10px 10px 10px 0px;	
 	font-weight : bold;
-	list-style-type: none;
-	
-	
-	flex-wrap: wrap;
-	
-
-	
+	list-style-type: none;	
+	flex-wrap: wrap;	
 }
 #filtres-links a {
 	font-weight: bold;
@@ -172,7 +164,9 @@ section {
 	margin-bottom: 15px;
 }
 #hebergement_box a:hover {
-	border-color: black 5px solid;
+	box-shadow: 1px 1px 10px 3px #0065FC;
+	box-sizing: content-box;
+	border-radius: 20px;
 }
 .img-hebergement {
 	position: absolute;
@@ -186,8 +180,9 @@ section {
 	background-color: white;
 	color: black;
     margin-top: 110px;
-    margin-bottom: 0px;
-	/* Espace trop grand */
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius:0px 0px 20px 20px;
 }
 h3 {
 	font-weight: bold;
@@ -223,7 +218,7 @@ no-margin-bottom {
 }
 .aside-hebergement {
 	flex : none;
-	width: 250px;
+	width: 300px;
 	background-color: #F2F2F2;
 	border-radius: 15px;
 	padding:20px;
@@ -233,7 +228,7 @@ no-margin-bottom {
 	
 	display:flex; 
 	flex-direction: row;
-	width: 230px;
+	width: 280px;
 	height:100px;
 	border:5px solid white;
 	background-color: white;
@@ -256,9 +251,8 @@ no-margin-bottom {
 	display: flex;
 	background-color: white;
 	color: black;
-   margin-left: 100px
+    margin-left: 100px;
     margin-bottom: 0px;
-	/* Espace trop grand */
 }
 
 /* Flex section activité ??? */
