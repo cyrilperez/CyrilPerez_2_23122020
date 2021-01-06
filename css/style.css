@@ -193,12 +193,14 @@ section {
     border-radius:0px 0px 20px 20px;
 }
 h3 {
-	font-weight: bold;
+	font-weight: bolder;
+	margin-left: 15px;
 }
-h5 {
-	font-weight: bold;
+h6 {
+	font-weight: bolder;
 	margin-top: 5px;
 	margin-left: 15px;
+	
 }
 em {
 	font-weight: bold;
@@ -276,7 +278,7 @@ no-margin-bottom {
 /* Flex section activité ??? */
 .wrapper {
     display: grid;
-    align-content: center;
+    
     grid-gap: 20px;
     grid-template-rows: 100px 100px 100px 100px 100px 100px;
     grid-template-columns: 280px 280px 280px 280px;
@@ -319,14 +321,53 @@ no-margin-bottom {
     grid-column: 4 ;
     grid-row: 3 / 6;
     }
-.img-activite {
+.img-activite-a {
 	
 	margin: 0px 0px 0px 0px;
 	width: 280px;
 	height: 530px;
 	object-fit: cover;
-	border-radius: 15px 15px 0px 0px;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-b {
 	
+	margin: 0px 0px 0px 0px;
+	width: 280px;
+	height: 290px;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-c {
+
+	margin: 0px 0px 0px 0px;
+	width: 280px;
+	height: 170px;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-d {
+	
+	margin: 0px 0px 0px 0px;
+	width: 280px;
+	height: 530px;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-e {
+	
+	margin: 0px 0px 0px 0px;
+	width: 280px;
+	height: 210px;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-f {
+	
+	margin: 0px 0px 0px 0px;
+	width: 280px;
+	height: 210px;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;	
 }
 
 /* FOOTER */
