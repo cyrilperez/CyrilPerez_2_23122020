@@ -5,13 +5,12 @@ body {
 
 
 /* NAV LINKS */
-a{
-	text-decoration: none;
-}
-
-.footer-links {
+a {
 	list-style-type: none;
-}
+	text-decoration: none;
+	}
+
+
 #nav-links {
 	list-style-type: none;
 	display: flex;
@@ -20,6 +19,7 @@ a{
 	justify-content: flex-end;
 }
 #nav-links a {
+	text-decoration: none;
 	font-size: 0.7em;
 	color: black;
     margin-left: 20px;
@@ -107,6 +107,7 @@ background-color: #DEEBFF;
 	flex-wrap: wrap;	
 }
 #filtres-links a {
+	
 	font-weight: bold;
 	color:black;
 	margin: 20px;
@@ -286,16 +287,16 @@ no-margin-bottom {
     color: #444;
   }
   
-  .box {
+  .boxact {
     background-color: white;
     color: black;
     border-radius: 15px;
     padding: 0px;
     font-size: 150%;
-    box-shadow: 1px 1px 5px #F2F2F2;
+    box-shadow: 1px 1px 2px 1px #F2F2F2;
 }
- .box a:hover {
-	 box-shadow: 1px 1px 5px #0065FC;
+ .boxact:hover {
+	 box-shadow: 2px 2px 4px 1px #0065FC;
  }
 .a {
     grid-column: 1 ;
@@ -373,9 +374,29 @@ no-margin-bottom {
 /* FOOTER */
 .piedpage {
 	display: flex;
+	flex-wrap: nowrap;
+	
 	background-color: #F2F2F2;
 }
+.links-footer {
+		width: 33%;
+}
 
-
+.footer-div {
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.footer-links {
+	list-style-type: none;
+	font-size: small;
+}
+.footer-links a {
+	
+	color: black;
+}	
+.footer-links a:hover {
+	
+	color: #0065FC;
+}	
 
 
