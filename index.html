@@ -27,27 +27,22 @@
 
 	<!--   Header -->
 	<header>
-
-	<!-- Navigation -->
-	<nav class="titre">
-	    <div>
-			<a href="#page-top"><img src="images/Reservia.svg" alt="Logo_Reservia_svg"></a>
-	    </div>
-		<div>
-			<ul id="nav-links">
-			<li class="nav-element"><a href="#Hébergements">Hébergements</a>
-			</li>
-		    <li class="nav-element"><a href="#Activités">Activités</a>
-	        </li>
-	        <li class="nav-element inscrire"><a href="#">S'inscrire</a>
-            </li>
-		    </ul>
-		</div>
-	
-	</nav>
-
-
-	<!-- Bannière -->
+        <div id="logo">
+          <img id="width-logo" src="images/Reservia.svg" alt="Logo">
+        </div>
+        <nav class="nav-block">
+          <ul class="nav-ul">
+            <li class="nav-content type1 c_bleu">Hébergements</li>
+            <li class="nav-content type2">Activités</li>
+            <li class="nav-register c_bleu">S'inscrire</li>
+          </ul>
+        </nav>
+      </header>
+      
+      <!-- Bannière -->
+      <div class="banniere">
+	      
+	      
     <div id="slogan">
 		<h4>Trouvez votre hébergement pour des vacances de rêve</h4>
 		<h5>En plein centre ville ou en pleine nature</h5>
@@ -57,7 +52,7 @@
 		<div class="search-form">
 		    <label class="search-gauche" for="city"><i class="fas fa-map-marker-alt"></i></label>
 		    <input class="search-text" type="text" name="city" id="city" placeholder="Marseille, France" required>
-			<input id="search-button" type="submit" value="Rechercher">
+			<div class="envoi1"><input id="search-button" type="submit" value="Rechercher"></div><div class="envoi2"><button type="submit" id="search-button" title="Envoyer"><i class="fas fa-search"></i></button></div>
 		</div>
 	</form>
 	
@@ -65,7 +60,7 @@
 			<ul id="filtres-links">
 			<li><a href=#><i class="fas fa-money-bill-wave button-blue"></i>économique</a>
 			</li>
-			<li><a href=#><i class="fas fa-child button-blue"></i>Familial</a>
+			<li><a href=#><i class="fas fa-child button-blue2"></i>Familial</a>
 			</li>
 			<li><a href=#><i class="fas fa-heart button-blue"></i>Romantique</a>
 			</li>
@@ -73,13 +68,14 @@
 			</li>
 			</ul>		  
 	</div>
-		<div class="margin-responsive">
-			<div><i class="fas fa-info border"></i></div><div> Plus de 500 logements sont disponibles dans cette ville</div>
+		<div class="info">
+			<div><i class="fas fa-info border"></i></div>
+			<div> Plus de 500 logements sont disponibles dans cette ville</div>
 		</div>
-	
-	</header>
-	
-
+		
+		
+      </div>
+      
   <!--   Sections -->
   <!-- Hébergements à Mareseille -->
   <section>
@@ -220,5 +216,7 @@
 		</div>
 	</footer>
 	
+
 </body>
+
 </html>
