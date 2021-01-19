@@ -3,7 +3,6 @@ body {
 	font-family: 'Raleway', 'sans-serif';
 	margin-top: 0px;
 	margin-left: 0px;
-	width: 1240px;
 }
 em {
 	font-weight: bold;
@@ -452,27 +451,33 @@ no-margin-bottom {
 
 @media all and (max-device-width: 480px) {
 body {
-	margin: 0px;
+	margin: 5px 0px 0px 0px;
+	display: table;
 }
 .banniere {
 	margin-left:20px;
+	width: 100%;
 }
 h4{
-	font-size: 4em;
+	font-size: 5em;
 	font-weight: bold;
 	margin-bottom: 5px;
 }
 h5 {
 	margin-top: 20px;
-	font-size: 1.6em;
+	font-size: 3.6em;
 	font-weight: 100;
 }
 header {
 	display: block;
+    margin-left: 0px;
+    margin-right: -87px;
+    margin-top: 50px;
+    overflow: hidden;
 }
     #logo {
         width: 100%;
-        margin: 20px 0 10px 0;
+        margin: 20px 0 50px 66px;
         padding-left: 20px;
     }
 #width-logo {
@@ -488,6 +493,7 @@ header {
         display: flex;
         justify-content: space-around;
         padding: 0 0 0 0;
+        font-size: x-large;
     }
  
     .nav-content {
@@ -514,12 +520,12 @@ header {
  
     .nav-register {
         position: absolute;
-   top: 40px;
-    right: 50px;
+    top: 70px;
+    right: -850px;
     font-size: 2em;
     font-weight: bold;
-        padding: 20px 0;
-        color: #0065FC;
+    padding: 20px 0;
+    color: #0065FC;
     }
     .envoi1
     {
@@ -532,46 +538,47 @@ header {
     }
     .search-form {
 	width: 100%;
-	height: 100px;
+	height: 135px;
 	
 	margin: 0px;
 	
 	display: flex;
 	align-items: center;
-	
+	border-radius: 50px;
 	flex-wrap: nowrap;
 }
 .search-gauche {
-	width: 10%;
-	font-size: xx-large;
-	text-align: center;
-	display: inline-block;
-	padding: 30px 6px 29px 10px;
-	align-items: center;
-	background-color: #F2F2F2;
-	border: 1px #F2F2F2 solid;
-	border-radius: 50px 0px 0px 50px
+	    width: 10%;
+    height: fit-content;
+    font-size: xxx-large;
+    text-align: center;
+    display: inline-block;
+    padding: 30px 6px 29px 10px;
+    align-items: center;
+    background-color: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+    border-radius: 50px 0px 0px 50px;
 }
 .search-text {
 	width: 70%;
 	font-weight: bold;
-	font-size: 2em;
-	padding: 30px;
+	font-size: 3em;
+	padding: 36px;
 	color:black;
 	align-items: flex-start;	
 	border: 0px;
 }
 #search-button {
-	font-size: xx-large;
-	width: 100%;
-	height: 100px;
-	display: inline-block;
-	color: white;
-	background-color: #0065FC;
-	margin-left: 0px;
-	padding: 10px 20px 10px 20px;
-	border: 2px solid #0065FC;
-	border-radius: 25px;
+	font-size: xxx-large;
+    width: 100%;
+    height: 135px;
+    /* display: inline-block; */
+    color: white;
+    background-color: #0065FC;
+    margin-left: 0px;
+    /* padding: 29px 63px 61px 57px; */
+    border: 20px solid #0065FC;
+    border-radius: 25px;
 	
 }
 #search-button a {
@@ -637,14 +644,16 @@ background-color: #DEEBFF;
 li {
 	list-style-type: none;
 	margin-left: 0px;
+	margin-bottom: 20px;
 }
 ul {
 	padding-left: 0px;
 }
 
 .info{
-	font-size: 3em;
-	align-items: baseline;
+    font-size: 3.5em;
+    margin-bottom: 50px;
+    align-items: baseline;
 }
 .border {
 	font-size: 0.5em;
@@ -658,8 +667,10 @@ ul {
 
 /* SECTION */
 section {
-	display:flex;
-	    flex-direction: column-reverse;
+display: flex;
+    flex-direction: column-reverse;
+    margin-left: 0px;
+    width: 104%;
 	}
 
 .hmarseille {
@@ -727,9 +738,8 @@ h6 {
 }
 em {
 	font-weight: bold;
-	font-style: normal;
-	font-size: 2em;
-    margin-top: 45px;
+    font-style: normal;
+    margin-top: 20px;
     margin-bottom: 10px;
 	
 }
@@ -802,6 +812,9 @@ aside {
 	border-radius: 20px;
 
 }
+.star {
+	display: flex;
+}
 .img-hebergement_aside {
 	position: absolute;
 	border-radius: 20px 0px 0px 20px;
@@ -812,12 +825,23 @@ aside {
 	}
 .text-box_aside {
 	background-color: white;
-	color: black;
-    margin-left: 310px;
+    color: black;
+    margin-left: 389px;
     margin-bottom: 0px;
+    margin-top: 17px;
+    padding-right: 46px;
     border-radius: 0px 20px 20px 0px;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-
-
+.none {
+	display:none;
+}
+.titre-filtres {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
 
 }
