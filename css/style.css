@@ -215,7 +215,7 @@ aside {
 }
 
 
-#hebergement_box {
+.hebergement_box {
 	
 	display:flex; 
 	flex-direction: column;
@@ -228,7 +228,7 @@ aside {
 	margin-bottom: 15px;
 
 }
-#hebergement_box a:hover {
+.hebergement_box a:hover {
 	box-shadow: 1px 1px 10px 3px #0065FC;
 	box-sizing: content-box;
 	border-radius: 20px;
@@ -296,7 +296,7 @@ no-margin-bottom {
 .aside-hebergement {
 	
 }
-#hebergement_box_aside {
+.hebergement_box_aside {
 	display:flex; 
 	flex-direction: row;
 	width: 280px;
@@ -307,7 +307,7 @@ no-margin-bottom {
 	margin-right: 0px;
 	margin-bottom: 15px;
 }
-#hebergement_box_aside a:hover {
+.hebergement_box_aside a:hover {
 	box-shadow: 1px 1px 10px 3px #0065FC;
 	box-sizing: content-box;
 	border-radius: 20px;
@@ -716,7 +716,7 @@ display: flex;
 }
 
 
-#hebergement_box {
+.hebergement_box {
 display: flex;
     flex-direction: row;
     width: 119%;
@@ -728,7 +728,7 @@ display: flex;
     margin-bottom: 10px;
     box-shadow: 4px 10px 20px 5px #bdbdbd;
 }
-#hebergement_box a:hover {
+.hebergement_box a:hover {
 	box-shadow: 1px 1px 10px 3px #0065FC;
 	box-sizing: content-box;
 	border-radius: 20px;
@@ -758,7 +758,7 @@ background-color: white;
 }
 
 
-}
+
 h3 {
 	font-weight: bolder;
 	margin-left: 0px;
@@ -831,7 +831,7 @@ aside {
     padding: 20px;
     /* margin: 20px;*/
 }
-#hebergement_box_aside {
+.hebergement_box_aside {
     display: flex;
     flex-direction: row;
     width: 96%;
@@ -843,7 +843,7 @@ aside {
     margin-bottom: 10px;
     box-shadow: 4px 10px 20px 5px #bdbdbd;
 }
-#hebergement_box_aside a:hover {
+.hebergement_box_aside a:hover {
 	box-shadow: 1px 1px 10px 3px #0065FC;
 	box-sizing: content-box;
 	border-radius: 20px;
@@ -877,10 +877,7 @@ background-color: white;
 }
 
 
-}
 
-
-}
 .none {
 	display:none;
 }
@@ -1018,4 +1015,5 @@ background-color: white;
 	margin-left: 40px;
 	font-size: 1em;
 
+}
 }
