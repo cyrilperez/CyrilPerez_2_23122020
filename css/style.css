@@ -9,6 +9,9 @@ em {
 	font-style: normal;
 	
 }
+.none-desktop {
+	display: none;
+}
 a {
 	list-style-type: none;
 	text-decoration: none;
@@ -17,7 +20,7 @@ a {
 li {
 	list-style-type: none;
 }
-h4{
+h1{
 	font-size: 1.2em;
 	margin-bottom: 5px;
 }
@@ -36,7 +39,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 0px;
+	margin-top: 27px;
 	margin-left: 40px;
 }
 .nav-block {
@@ -50,19 +53,33 @@ header {
         display: flex;
         justify-content:  space-around;   
     }
-    .type1 {
-        border-top: 2px solid #0065FC;
+    .type1 a {
+        
         padding: 40px 45px;
         flex:1;
         color: #0065FC;
-    }
-  .type2 {
-        border-top: 2px solid white;
+        color: black;
+	    border-top: 2px solid white;
+    } 
+    .type1 a:hover {
+        
         padding: 40px 45px;
         flex:1;
+        color: #0065FC;
+       
+	    border-top: 2px solid #0065FC;
     }
-      .nav-register {
+
+      .nav-register a {
         border-top: 2px solid white;
+        margin-right: 100px;
+        padding: 40px 20px 40px 45px;
+        flex:1;
+      
+        color: black;
+    }
+    .nav-register a:hover {
+	    border-top: 2px solid white;
         margin-right: 100px;
         padding: 40px 20px 40px 45px;
         flex:1;
@@ -186,7 +203,7 @@ background-color: #DEEBFF;
 section {
 	display:flex;
 	margin-left: 40px;
-	width: 97%;
+	width: 1206px;
 	}
 aside {
 	display: flex;
@@ -332,7 +349,7 @@ no-margin-bottom {
 /* Flex section activité  */
 .wrapper {
   display: grid;
-    width: 100%;
+    width: auto;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -460,7 +477,7 @@ display: flex;
 	margin-left:20px;
 	width: 100%;
 }
-h4{
+h1{
 	font-size: 1.4em;
     font-weight: bold;
     margin-bottom: 5px;
@@ -685,7 +702,7 @@ font-size: 0.7em;
     padding: 6px 9px;
 }
 .titre-filtres {
-    margin-top: 15px;
+    margin-top: 40px;
     margin-bottom: 10px;
     font-size: 1.1em;
     font-weight: bold;
