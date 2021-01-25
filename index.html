@@ -30,11 +30,11 @@
           <img id="width-logo" src="images/Reservia.svg" alt="Logo">
         </div>
         <nav class="nav-block">
-          <ul class="nav-ul">
-            <li class="nav-content type1 c_bleu">Hébergements</li>
-            <li class="nav-content type2">Activités</li>
-            <li class="nav-register c_bleu">S'inscrire</li>
-          </ul>
+          <div class="nav-ul">
+            <div class="nav-content type1"><a href="#article-hebergement" >Hébergements</a></div>
+            <div class="nav-content type1"><a href="#pop" >Activités</a></div>
+            <div class="nav-register c_bleu"> <a href="#top">S'inscrire</a></div>
+          </div>
         </nav>
       </header>
       
@@ -43,7 +43,7 @@
 	      
 	      
     <div id="slogan">
-		<h4>Trouvez votre hébergement pour des vacances de rêve</h4>
+		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 		<h5>En plein centre ville ou en pleine nature</h5>
     </div>
 	
@@ -51,11 +51,11 @@
 		<div class="search-form">
 		    <label class="search-gauche" for="city"><i class="fas fa-map-marker-alt"></i></label>
 		    <input class="search-text" type="text" name="city" id="city" placeholder="Marseille, France" required>
-			<div class="envoi1"><input id="search-button" type="submit" value="Rechercher"></div><div class="envoi2"><button type="submit" class="search-button" title="Envoyer"><i class="fas fa-search"></i></button></div>
+			<div class="envoi1"><input id="search-button" type="submit" value="Rechercher"></div><div class="envoi2"><button id="search-button" type="bouton"><i class="fas fa-search"></i></button></div>
 		</div>
 	</form>
 	
-	<div class="filtres"><h5 class="titre-filtres">Filtres</h5>
+	<div class="filtres"><h1 class="titre-filtres">Filtres</h1>
 			<ul id="filtres-links">
 			<li><a href=#><i class="fas fa-money-bill-wave button-blue"></i>&Eacute;conomique</a>
 			</li>
@@ -139,7 +139,7 @@
 	    
 	    <!-- Aside : Les plus populaires -->
 	    <aside>
-		    <div class="pop">
+		    <div id="pop">
 				<div><h3>Les plus populaires</h3></div><div><h3><i class="fas fa-chart-line"></i></h3></div>
 				
 			</div>
@@ -149,7 +149,7 @@
 					<img class="img-hebergement_aside" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="description_photo_hébergement">
 					<div class="text-box_aside">
 						<div><em>Hôtel le soleil du matin</em><br>
-						Nuit à partir de <em>128€</em></div><br class="none"><br>
+						Nuit à partir de <em>128€</em></div><br class="none"><br class="none-desktop">
 						<div class="star"><i class="fas fa-star color-star-blue"></i><i class="fas fa-star color-star-blue"></i><i class="fas fa-star color-star-blue"></i><i class="fas fa-star color-star-blue"></i><i class="fas fa-star color-star-blue"></i></div>
 				</div></a></div>
 				<div class="hebergement_box_aside">
