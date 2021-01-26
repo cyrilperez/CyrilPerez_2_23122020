@@ -36,9 +36,6 @@ h3{
 	display: none;
 }
 
-
-
-
 header {
 	display: flex;
 	justify-content: space-between;
@@ -66,6 +63,22 @@ header {
 	    border-top: 2px solid white;
     } 
     .type1 a:hover {
+        
+        padding: 40px 45px;
+        flex:1;
+        color: #0065FC;
+       
+	    border-top: 2px solid #0065FC;
+    }
+    .type2 a {
+        
+        padding: 40px 45px;
+        flex:1;
+        color: #0065FC;
+        color: black;
+	    border-top: 2px solid white;
+    } 
+    .type2 a:hover {
         
         padding: 40px 45px;
         flex:1;
@@ -528,8 +541,131 @@ background-color: white;
 
 
 
-/* -------------------------- Iphone ------------------------------ */
 
+
+
+
+/* -------------------------- Tablet ------------------------------ */
+/* -------------------------- Tablet ------------------------------ */
+/* -------------------------- Tablet ------------------------------ */
+/* -------------------------- Tablet ------------------------------ */
+/* -------------------------- Tablet ------------------------------ */
+
+@media all and (min-width: 768px)
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 27px;
+	margin-left: 40px;
+	width: 1004px;
+}
+section {
+    display: flex;
+    margin-left: 40px;
+    width: 1004px;
+}
+
+/* Flex section activité  */
+.wrapper {
+  display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 22px;
+    grid-template-areas:
+        "a c e"
+        "a c e"
+        "a c e"
+        "a c e"
+        "a c e"
+        "b d f"
+        "b d f"
+        "b d f"
+        "b d f"
+        "b d f";
+  }
+  
+  .boxact {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 0px;
+    font-size: 150%;
+    box-shadow: 1px 1px 2px 1px #F2F2F2;
+}
+ .boxact:hover {
+	 box-shadow: 2px 2px 4px 1px #0065FC;
+ }
+.a { grid-area: a; }
+.b { grid-area: b; }
+.c { grid-area: c; }
+.d { grid-area: d; }
+.e { grid-area: e; }
+.f { grid-area: f; }
+
+.img-activite-a {	
+	margin: 0px 0px 0px 0px;
+	width: 306px;
+	height: 145px;
+	object-fit: none;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-b {
+	width: 306px;
+	height: 145px;
+	object-fit: none;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-c {	
+	margin: 0px 0px 0px 0px;
+	width: 306px;
+	height: 145px;
+	object-fit: none;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-d {
+	width: 306px;
+	height: 145px;
+	object-fit: none;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-e {	
+	margin: 0px 0px 0px 0px;
+	width: 306px;
+	height: 145px;
+	object-fit: none;
+	border-radius: 15px 15px 0px 0px;	
+}
+.img-activite-f {
+	width: 306px;
+	height: 145px;
+	object-fit: none;
+	border-radius: 15px 15px 0px 0px;	
+}
+
+/* FOOTER */
+.piedpage {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-right: -40px;
+	background-color: #F2F2F2;
+	width: 1120px;
+}
+
+
+
+
+
+
+
+/* -------------------------- Iphone ------------------------------ */
+/* -------------------------- Iphone ------------------------------ */
+/* -------------------------- Iphone ------------------------------ */
+/* -------------------------- Iphone ------------------------------ */
+/* -------------------------- Iphone ------------------------------ */
 
 @media all and (max-device-width: 480px) {
 
