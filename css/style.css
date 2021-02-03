@@ -31,6 +31,7 @@ h1{
 h2 {
 	margin-top: 10px;
 	font-weight: 100;
+	font-size: 0.8em;
 }
 h3{
 	font-size: 1.2em;
@@ -138,7 +139,7 @@ header {
 	color: white;
 	background-color: #0065FC;
 	margin-left: 0px;
-	padding: 10px 20px 10px 20px;
+	padding: 14px 20px 14px 20px;
 	border: 2px solid #0065FC;
 	border-radius: 0px 15px 15px 0px
 	
@@ -504,33 +505,54 @@ header {
 	align-items: center;
 	margin-top: 27px;
 	margin-left: 40px;
-	width: 1004px;
+	width: 85%;
 }
 section {
     display: flex;
     margin-left: 40px;
-    width: 1004px;
+    width: 768px;
 }
-
+aside {
+	display: flex;
+	flex-flow: column wrap; 
+	align-content: flex-start;
+	justify-content: flex-start;
+	width: 40%;
+	background-color: #F2F2F2;
+	border-radius: 15px;
+	padding:20px;
+	margin: 20px;
+}
+.article-hebergement {
+	display: flex;
+	flex-flow: row wrap; 
+	align-content: flex-start;
+	justify-content: flex-start;
+	background-color: #F2F2F2;
+	border-radius: 15px;
+	padding:20px;
+	margin: 20px 20px 20px 0px;
+	width: 35%;
+}
 /* Flex section activité  */
 .wrapper {
     display: grid;
-    width: auto;
+    width: 768px;
     height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 20px 22px;
     grid-template-areas:
-        "a c e"
-        "a c e"
-        "a c e"
-        "a c e"
-        "a c e"
-        "b d f"
-        "b d f"
-        "b d f"
-        "b d f"
-        "b d f";
+        "a d"
+        "a d"
+        "a d"
+        "b e"
+        "b e"
+        "b e"
+        "c f"
+        "c f"
+        "c f";
+         
 }
 .boxact {
     background-color: white;
@@ -552,39 +574,39 @@ section {
 
 .img-activite-a {	
 	margin: 0px 0px 0px 0px;
-	width: 306px;
+	width: 342px;
 	height: 145px;
 	object-fit: none;
 	border-radius: 15px 15px 0px 0px;	
 }
 .img-activite-b {
-	width: 306px;
+	width: 342px;
 	height: 145px;
 	object-fit: none;
 	border-radius: 15px 15px 0px 0px;	
 }
 .img-activite-c {	
 	margin: 0px 0px 0px 0px;
-	width: 306px;
+	width: 342px;
 	height: 145px;
 	object-fit: none;
 	border-radius: 15px 15px 0px 0px;	
 }
 .img-activite-d {
-	width: 306px;
+	width: 342px;
 	height: 145px;
 	object-fit: none;
 	border-radius: 15px 15px 0px 0px;	
 }
 .img-activite-e {	
 	margin: 0px 0px 0px 0px;
-	width: 306px;
+	width: 342px;
 	height: 145px;
 	object-fit: none;
 	border-radius: 15px 15px 0px 0px;	
 }
 .img-activite-f {
-	width: 306px;
+	width: 342px;
 	height: 145px;
 	object-fit: none;
 	border-radius: 15px 15px 0px 0px;	
@@ -596,7 +618,7 @@ section {
 	flex-wrap: nowrap;
 	margin-right: -40px;
 	background-color: #F2F2F2;
-	width: 1120px;
+	width: auto;
 }
 }
 
@@ -610,12 +632,13 @@ section {
 /* -------------------------- Iphone ------------------------------ */
 /* -------------------------- Iphone ------------------------------ */
 
-@media all and (max-device-width: 480px) {
+@media all and (max-device-width: 375px) {
 
 body {
 	margin: 5px 0px 0px 0px;
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 .banniere {
 	margin-left:20px;
@@ -647,6 +670,7 @@ header {
     /* margin-right: -87px; */
     margin-top: 20px;
     overflow: hidden;
+    width: 104%;
 }
 #logo {
     width: 100%;
@@ -718,7 +742,7 @@ header {
 .nav-register a {
     position: absolute;
     top: 20px;
-    right: -77px;
+    right: -62px;
     font-size: 1em;
     font-weight: 100;
     padding: 20px 0;
@@ -906,7 +930,7 @@ section {
 .hebergement_box {
 	display: flex;
     flex-direction: row;
-    width: 119%;
+    width: 200%;
     height: 180px;
     border: 5px solid white;
     background-color: white;
@@ -919,12 +943,13 @@ section {
 	box-shadow: 1px 1px 10px 3px #0065FC;
 	box-sizing: content-box;
 	border-radius: 20px;
+	width: inherit;
 }
 .img-hebergement {
 	position: absolute;
     border-radius: 20px 20px 0px 0px;
     height: 110px;
-    width: 89%;
+    width: 85%;
     margin-left: -0.5px;
     object-fit: cover;
     object-position: 0% 50%;
@@ -996,7 +1021,7 @@ aside {
     display: flex;
     flex-flow: column wrap;
     align-content: stretch;
-    width: 88%;
+    width: 83%;
     background-color: #F2F2F2;
     border-radius: 0px;
     padding: 20px;
@@ -1016,7 +1041,7 @@ aside {
 .hebergement_box_aside {
     display: flex;
     flex-direction: row;
-    width: 96%;
+    width: 95%;
     height: 130px;
     border: 5px solid white;
     background-color: white;
@@ -1071,6 +1096,7 @@ aside {
 
 /* Flex section activité  */
 .wrapper {
+	width: 91%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
