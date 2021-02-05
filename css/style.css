@@ -9,6 +9,10 @@ body {
 	margin-top: 0px;
 	margin-left: 0px;
 }
+.container {
+	width: 1300px;
+	margin: 0px auto;
+}
 em {
 	font-weight: bold;
 	font-style: normal;	
@@ -37,6 +41,17 @@ h3{
 	font-size: 1.2em;
 	margin-bottom: 5px;
 }
+.titre{
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.chart{
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+
 .envoi2 {
 	display: none;
 }
@@ -452,9 +467,7 @@ object-fit: cover;
 .piedpage {
 	display: flex;
 	flex-wrap: nowrap;
-	margin-right: -40px;
 	background-color: #F2F2F2;
-	width: 1300px;
 }
 .links-footer {
 	width: 33%;
@@ -507,10 +520,15 @@ header {
 	margin-left: 40px;
 	width: 85%;
 }
-section {
+.sec {
     display: flex;
     margin-left: 40px;
     width: 768px;
+    align-items: flex-start;
+}
+.container {
+	width: 768px;
+	margin: 0px auto;
 }
 aside {
 	display: flex;
@@ -632,13 +650,17 @@ aside {
 /* -------------------------- Iphone ------------------------------ */
 /* -------------------------- Iphone ------------------------------ */
 
-@media all and (max-device-width: 375px) {
+@media all and (max-width: 375px) {
 
 body {
 	margin: 5px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     width: auto;
+}
+.container {
+	width: 365px;
+	margin: 0px auto;
 }
 .banniere {
 	margin-left:20px;
@@ -656,6 +678,10 @@ h2 {
 	font-size:1.05em;
 }
 h3{
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+.titre{
 	font-size: 1.2em;
 	margin-bottom: 5px;
 }
@@ -705,7 +731,6 @@ header {
     border-bottom: 3px solid #F2F2F2;
     padding: 15px 40px;
     /* flex: 1; */
-    text-align: ;
     font-size: 1em;
     /* font-weight: bold; */
     color: #0065FC;
@@ -904,7 +929,7 @@ ul {
 
 
 /* SECTION */
-section {
+.sec {
 	display: flex;
     flex-direction: column-reverse;
     margin-left: 0px;
@@ -1021,7 +1046,7 @@ aside {
     display: flex;
     flex-flow: column wrap;
     align-content: stretch;
-    width: 83%;
+    width: 90%;
     background-color: #F2F2F2;
     border-radius: 0px;
     padding: 20px;
